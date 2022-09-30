@@ -3,13 +3,26 @@ import { HomePage } from "./components/HomePage";
 import { ShopPage } from "./components/ShopPage";
 import './App.css';
 import { NavBar } from "./components/NavBar";
-import cart from './shopping-cart.png';
+import cartt from './shopping-cart.png';
+import { useState } from "react";
+import { SetActivity } from "./components/SetActivity";
 
 function App() {
+
+  let cartInActive = [<div className="cart"></div>];
+
+  const [cart, setCart] = useState(cartInActive);
   return (
     <>
     <Routes>
-      <Route path='/shop' element={<img src={cart} alt="test" className="cart"/>}></Route>
+      <Route path='/shop' element={
+        <>
+        <div className="cartContainer">
+          <img src={cartt} alt="test" className="cartSymbol" onClick={() => SetActivity({cart, setCart})}/>
+          {cart}
+        </div>
+        </>
+      }></Route>
     </Routes>
     <NavBar />
     <Routes>
