@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+}
+.header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    flex-direction: row;
+}
+.cart{
+    padding-right: 50px;
+    position: absolute;
+    right: 0;
+}
