@@ -16,4 +16,5 @@ ul{
     padding-right: 50px;
     position: absolute;
     right: 0;
+    cursor: grab;
 }
