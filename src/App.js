@@ -3,7 +3,7 @@ import { HomePage } from "./components/HomePage";
 import { ShopPage } from "./components/ShopPage";
 import './App.css';
 import { NavBar } from "./components/NavBar";
-import cartt from './shopping-cart.png';
+import carter from './shopping-cart.png';
 import { useState } from "react";
 import { SetActivity } from "./components/SetActivity";
 
@@ -18,7 +18,7 @@ function App() {
       <Route path='/shop' element={
         <>
         <div className="cartContainer">
-          <img src={cartt} alt="test" className="cartSymbol" onClick={() => SetActivity({cart, setCart})}/>
+          <img src={carter} alt="test" className="cartSymbol" onClick={() => SetActivity({cart, setCart})}/>
           {cart}
         </div>
         </>
