@@ -18,3 +18,21 @@ ul{
     right: 0;
     cursor: grab;
 }
+.itemsBox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 210px));
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.item img{
+    width: 200px;
+    height: 200px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
