@@ -54,3 +54,10 @@ ul{
 .active{
     opacity: 1;
 }
+.amount{
+    display: flex;
+}
+.amount input{
+    width: 50px;
+    font-size: 10px;
+}
